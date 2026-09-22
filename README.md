@@ -1,29 +1,26 @@
-# 🍔 Simple Food Ordering
+# 🃏 Memory Card Game
 
-> A console food-ordering system in C++ for **Erion's Fast Food** — browse the menu, pick a size and quantity, and get your bill.
+> A classic flip & match memory card game built with HTML, CSS and JavaScript.
 
-**🔴 Live demo — view the source:** https://erionnezha.github.io/Simple-Food-Ordering/
+**🔴 Live demo — play it now:** https://erionnezha.github.io/Memory-Card-Game/
 
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-## 🍕 Menu
+## 🎮 How to Play
 
-| # | Category | Items |
-|---|----------|-------|
-| 1 | Pizzas | Chicken Fazita, Chicken Bar BQ, Peri Peri, Creamy Max |
-| 2 | Burgers | Zinger Burger, Chicken Burger, Beef Burger |
-| 3 | Sandwiches | Club Sandwich, Chicken Crispy Sandwich, Extreme Veg Sandwich |
-| 4 | Rolls | Chicken Chatni Roll, Chicken Mayo Roll, Veg Roll with Fries |
-| 5 | Biryani | Chicken Biryani, Prawn Biryani, Beef Biryani |
+1. Click any card to flip it over.
+2. Flip a second card — if the two images match, the pair stays open.
+3. Find all **8 matching pairs** to clear the board. Mismatched cards shake and flip back.
+4. The deck reshuffles automatically when you win. 🔄
 
-Sizes: Small Rs. 250 · Regular Rs. 500 · Large Rs. 900
+## ✨ Features
 
-## ▶️ How to Run
-
-```bash
-g++ ORDERINGC.CPP -o ordering
-./ordering
-```
+- Smooth 3D card-flip animations
+- Shuffle on every round — no two games alike
+- Shake feedback on wrong matches
+- Fully responsive — plays great on mobile
 
 ## 📄 License
 
