@@ -21,28 +21,31 @@ body{
   border-radius: 10px;
   background: #F8F8F8;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 450px;
 }
-.cards, .card, .view{
+.cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  list-style: none;
+}
+.card, .view{
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.cards{
-  height: 400px;
-  width: 100%;
-  max-width: 400px;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 .cards .card{
   cursor: pointer;
   list-style: none;
   user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
   position: relative;
   perspective: 1000px;
   transform-style: preserve-3d;
-  height: calc(100% / 4 - 10px);
-  width: calc(100% / 4 - 10px);
+  aspect-ratio: 1 / 1;
+  min-height: 64px;
 }
 .card.shake{
   animation: shake 0.35s ease-in-out;
@@ -66,13 +69,14 @@ body{
 }
 .card .view{
   width: 100%;
-  max-width: 400px;
   height: 100%;
   position: absolute;
+  inset: 0;
   border-radius: 7px;
   background: #fff;
   pointer-events: none;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   transition: transform 0.25s linear;
 }
@@ -93,10 +97,8 @@ body{
 }
 
 @media screen and (max-width: 700px) {
-  .cards{
-    height: 350px;
-    width: 350px;
-  }
+  .wrapper{ padding: 18px; }
+  .cards{ gap: 8px; }
   .card .front-view img{
     width: 17px;
   }
@@ -106,10 +108,8 @@ body{
 }
 
 @media screen and (max-width: 530px) {
-  .cards{
-    height: 300px;
-    width: 300px;
-  }
+  .wrapper{ padding: 14px; }
+  .cards{ gap: 6px; }
   .card .front-view img{
     width: 15px;
   }
