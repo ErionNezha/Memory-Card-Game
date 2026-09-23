@@ -1,5 +1,7 @@
 # 🃏 Loja e Letrave të Kujtesës 🇦🇱
 
+Created by **Erion Nezha**
+
 > Lojë klasike e letrave të kujtesës flip & match e ndërtuar me HTML, CSS dhe JavaScript.
 
 ![Pamje nga demo](screenshot.png)
